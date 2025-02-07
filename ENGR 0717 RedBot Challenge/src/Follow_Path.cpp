@@ -3,8 +3,8 @@ RedBotSensor left = RedBotSensor(A3);   // initialize a left sensor object on A3
 RedBotSensor center = RedBotSensor(A6); // initialize a center sensor object on A6
 RedBotSensor right = RedBotSensor(A7);  // initialize a right sensor object on A7
 
-// constants that are used in the code. LINETHRESHOLD is the level to detect 
-// if the sensor is on the line or not. If the sensor value is greater than this
+// constants that are used in the code. DARKLINE and LIGHTLINE are the levels to detect 
+// if the sensor is on the line or not. If the sensor value is greater than DARKLINE
 // the sensor is above a DARK line.
 //
 // SPEED sets the nominal speed
