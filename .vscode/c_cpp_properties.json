@@ -1,20 +1,53 @@
 {
     "configurations": [
         {
-            "name": "Win32",
+            "name": "Arduino",
             "includePath": [
-                "${workspaceFolder}/**"
+                "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino/**",
+                "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard/**",
+                "C:\\Users\\mdjor\\Documents\\Arduino\\libraries/**",
+                "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Follow_Path/**",
+                "C:/Users/mdjor/Documents/Arduino/libraries/SparkFun_RedBot_Library/src"
+            ],
+            "forcedInclude": [
+                "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Arduino.h"
+            ],
+            "compilerPath": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+            "compilerArgs": [
+                "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+                "-c",
+                "-g",
+                "-Os",
+                "-w",
+                "-std=gnu++11",
+                "-fpermissive",
+                "-fno-exceptions",
+                "-ffunction-sections",
+                "-fdata-sections",
+                "-fno-threadsafe-statics",
+                "-Wno-error=narrowing",
+                "-MMD",
+                "-flto",
+                "-mmcu=atmega328p",
+                "-DF_CPU=16000000L",
+                "-DARDUINO=10607",
+                "-DARDUINO_AVR_UNO",
+                "-DARDUINO_ARCH_AVR",
+                "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+                "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+                "c:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Follow_Path\\build\\sketch\\Follow_Path.ino.cpp",
+                "-o",
+                "c:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Follow_Path\\build\\sketch\\Follow_Path.ino.cpp.o"
             ],
             "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+                "F_CPU=16000000L",
+                "ARDUINO=10607",
+                "ARDUINO_AVR_UNO",
+                "ARDUINO_ARCH_AVR",
+                "USBCON"
             ],
-            "windowsSdkVersion": "10.0.22000.0",
-            "compilerPath": "cl.exe",
             "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "cppStandard": "c++17"
         }
     ],
     "version": 4
