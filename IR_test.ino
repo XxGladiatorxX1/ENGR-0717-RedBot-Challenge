@@ -1,5 +1,4 @@
 #include <RedBot.h>
-#include <Arduino.h>
 //attatch sensors ot pins
 RedBotSensor left = RedBotSensor(A3);   
 RedBotSensor center = RedBotSensor(A6); 
