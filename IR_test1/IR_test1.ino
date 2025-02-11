@@ -1,6 +1,1 @@
 
-void setup() {
-}
-
-void loop() {
-}
