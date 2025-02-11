@@ -1,8 +1,8 @@
 {
-  "port": "COM5",
+  "port": "",
   "configuration": "",
   "output": "build",
-  "board": "arduino:avr:uno",
+  "board": "",
   "programmer": "",
   "useProgrammer": false,
   "configurationRequired": false,
