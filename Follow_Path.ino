@@ -20,8 +20,6 @@ int rightSpeed;  // variable used to store the rightMotor speed
 void setup()
 {
     Serial.begin(9600);
-    Serial.println("Welcome to Line Following");
-    Serial.println("------------------------------------------");
     delay(2000);
     Serial.println("IR Sensor Readings: ");
     delay(500);
@@ -36,6 +34,8 @@ void loop()
     Serial.print(right.read());
     Serial.println();
 
+
+    /*
     // if on the line drive left and right at the same speed (left is CCW / right is CW)
     if(center.read() > LIGHTLINE && center.read() < DARKLINE)
     {
@@ -70,4 +70,5 @@ void loop()
 
     }
     delay(0);  // add a delay to decrease sensitivity.
+    */
 }
