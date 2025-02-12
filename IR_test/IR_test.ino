@@ -43,7 +43,7 @@ void loop()
     do {
         leftSpeed = SPEED;
         rightSpeed = 0;
-    }while(left.read() < LIGHTLINE)
+    }while(left.read() < LIGHTLINE);
 
     //readjust to go straight
 
@@ -51,7 +51,7 @@ void loop()
 
     // if all sensors are on black or up in the air, stop the motors.
     // otherwise, run motors given the control speeds above.
-    if((left.read() > DARKLINE || left.read() < LIGHTLINE) && (center.read() > DARKLINE || center.read() < LIGHTLINE) && (right.read() > DARKLINE || right.read() < LIGHTLINE) )
+    if ((left.read() > DARKLINE || left.read() < LIGHTLINE) && (center.read() > DARKLINE || center.read() < LIGHTLINE) && (right.read() > DARKLINE || right.read() < LIGHTLINE))
     {
         motors.stop();
     }
