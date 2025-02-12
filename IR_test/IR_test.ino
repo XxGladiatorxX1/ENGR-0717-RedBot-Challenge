@@ -1,5 +1,5 @@
 #include <RedBot.h>
-// attatch sensors ot pins
+// attatch sensors to pins
 RedBotSensor left = RedBotSensor(A3);   
 RedBotSensor center = RedBotSensor(A6); 
 RedBotSensor right = RedBotSensor(A7);  
