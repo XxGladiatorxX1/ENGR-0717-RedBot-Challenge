@@ -1,5 +1,5 @@
 #include <RedBot.h>
-//attatch sensors ot pins
+// attatch sensors ot pins
 RedBotSensor left = RedBotSensor(A3);   
 RedBotSensor center = RedBotSensor(A6); 
 RedBotSensor right = RedBotSensor(A7);  
@@ -11,7 +11,7 @@ RedBotSensor right = RedBotSensor(A7);
 // SPEED sets the nominal speed
 
 //change values later depending on value of red line
-#define DARKLINE 810 //will be red line
+#define DARKLINE 810 // will be red line
 #define LIGHTLINE 790
 #define SPEED 40  
 
@@ -21,7 +21,7 @@ int rightSpeed;  // variable used to store the rightMotor speed
 
 void setup()
 {
-    Serial.begin(9600); //prints in serial monitor
+    Serial.begin(9600); // prints in serial monitor
     Serial.println("Welcome to Line Following");
     Serial.println("------------------------------------------");
     delay(2000);
@@ -40,10 +40,12 @@ void loop()
    
 
     // while the line is under the left sensor, adjust relative speeds to turn to the right
-    do {
+    do
+    {
         leftSpeed = SPEED;
         rightSpeed = 0;
-    }while(left.read() < LIGHTLINE);
+    }
+    while (left.read() < LIGHTLINE);
 
     //readjust to go straight
 
@@ -59,8 +61,6 @@ void loop()
     {
         motors.leftMotor(leftSpeed);
         motors.rightMotor(rightSpeed);
-
     }
     delay(0);  // add a delay to decrease sensitivity.
 }
-
