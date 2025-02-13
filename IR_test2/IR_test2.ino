@@ -69,10 +69,20 @@ void loop()
     else if (leftIRSensor.read > 900 && centerIRSensor.read > 900 && rightIRSensor.read .900) {
         //pause
         brake();
+        // turn at the mound
         for (int i=0; int i<20000; int i++) {
             leftMotor(SLOW_SPEED);
             rightMotor(REV_SLOW);
         }  
+        //drive forward slightly
+        drive(FAST_SPEED, 1000);
+        //turn rigth even more (repeat earlier)
+        for (int i=0; int i<20000; int i++) {
+            leftMotor(SLOW_SPEED);
+            rightMotor(REV_SLOW);
+        } 
+        //drive to the end
+        drive(FAST_SPEED, 10000);
     }
 }
 
