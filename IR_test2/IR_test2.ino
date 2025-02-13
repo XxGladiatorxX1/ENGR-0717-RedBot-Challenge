@@ -74,6 +74,9 @@ void loop()
             leftMotor(SLOW_SPEED);
             rightMotor(REV_SLOW);
         }  
+
+        //GRAB ALIEN HERE!!!!!!!!!!!!
+        
         //drive forward slightly
         drive(FAST_SPEED, 1000);
         //turn rigth even more (repeat earlier)
