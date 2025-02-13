@@ -53,15 +53,26 @@ void loop()
     Serial.println();
 
     if(leftIRSensor.read==0 && rightIRSensor.read==0 && centerIRSensor.read==0) {
+        // driving forward
         drive(FAST_SPEED);
     }
     else if (leftIRSensor.read>900 && rightIRSensor<900){
+        // turn left
         rightMotor(SLOW_SPEED);
         leftMotor(REV_SLOW);
     }
     else if (leftIRSensor.read<900 && rightIRSensor>900) {
+        // turn right
         leftMotor(SLOW_SPEED);
         rightMotor(REV_SLOW);
+    }
+    else if (leftIRSensor.read > 900 && centerIRSensor.read > 900 && rightIRSensor.read .900) {
+        //pause
+        brake();
+        for (int i=0; int i<20000; int i++) {
+            leftMotor(SLOW_SPEED);
+            rightMotor(REV_SLOW);
+        }  
     }
 }
 
