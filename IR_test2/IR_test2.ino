@@ -34,7 +34,7 @@ int rightMotorSpeed;
 
 void setup()
 {
-    // Initialize baudrate
+    //  Initialize baudrate
     Serial.begin(9600);
 
     //  Motor encoder calibration
@@ -52,41 +52,46 @@ void loop()
     delay(1000);
     Serial.println();
 
-    if(leftIRSensor.read==0 && rightIRSensor.read==0 && centerIRSensor.read==0) {
-        // driving forward
-        drive(FAST_SPEED);
+    //  Matthew: one question, how come the value being compared to is 0?
+    if (leftIRSensor.read() == 0 && rightIRSensor.read() == 0 && centerIRSensor.read() == 0)
+    {
+        //  driving forward
+        motors.drive(FAST_SPEED);
     }
-    else if (leftIRSensor.read>900 && rightIRSensor<900){
-        // turn left
-        rightMotor(SLOW_SPEED);
-        leftMotor(REV_SLOW);
+    else if (leftIRSensor.read() > BLACK_MIN && rightIRSensor.read() < BLACK_MIN)
+    {
+        //  turn left
+        motors.rightMotor(SLOW_SPEED);
+        motors.leftMotor(REV_SLOW);
     }
-    else if (leftIRSensor.read<900 && rightIRSensor>900) {
-        // turn right
-        leftMotor(SLOW_SPEED);
-        rightMotor(REV_SLOW);
+    else if (leftIRSensor.read() < BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
+    {
+        //  turn right
+        motors.leftMotor(SLOW_SPEED);
+        motors.rightMotor(REV_SLOW);
     }
-    else if (leftIRSensor.read > 900 && centerIRSensor.read > 900 && rightIRSensor.read .900) {
-        //pause
-        brake();
-        // turn at the mound
-        for (int i=0; int i<20000; int i++) {
-            leftMotor(SLOW_SPEED);
-            rightMotor(REV_SLOW);
+    else if (leftIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
+    {
+        //  pause
+        motors.brake();
+        //  turn at the mound
+        // Matthew: another question, is "i" supposed to be the time duration of the turn?
+        for (int i = 0; i < 20000; i++)
+        {
+            motors.leftMotor(SLOW_SPEED);
+            motors.rightMotor(REV_SLOW);
         }  
 
         //GRAB ALIEN HERE!!!!!!!!!!!!
         
-        //drive forward slightly
-        drive(FAST_SPEED, 1000);
-        //turn rigth even more (repeat earlier)
-        for (int i=0; int i<20000; int i++) {
-            leftMotor(SLOW_SPEED);
-            rightMotor(REV_SLOW);
+        //  drive forward slightly
+        motors.drive(FAST_SPEED, 1000);
+        //  turn right even more (repeat earlier)
+        for (int i = 0; i < 20000; i++) {
+            motors.leftMotor(SLOW_SPEED);
+            motors.rightMotor(REV_SLOW);
         } 
-        //drive to the end
-        drive(FAST_SPEED, 10000);
+        //  drive to the end
+        motors.drive(FAST_SPEED, 10000);
     }
 }
-
-
