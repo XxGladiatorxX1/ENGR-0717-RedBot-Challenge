@@ -47,6 +47,8 @@ void loop()
 {
     readSensorData();
 
+    // NEED TO TEST whether this function pauses the loop
+    // If it does, I'll need to do away with its while loop
     encodedDrive(FAST_SPEED);
 }
 
@@ -214,5 +216,5 @@ void encodedTankTurn(int motorPower, int direction)
 void encodedSkidTurn(int motorPower, int direction)
 {
     // TO BE IMPLEMENTED
-    // I'll probably end up using an angular velocity & rotation calculation for this
+    // I'll probably end up using a motor power-to-wheel rotation function to acheive this
 }
