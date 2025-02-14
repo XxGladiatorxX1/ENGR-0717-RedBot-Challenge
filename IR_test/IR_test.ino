@@ -4,7 +4,7 @@ RedBotSensor left = RedBotSensor(A3);
 RedBotSensor center = RedBotSensor(A6); 
 RedBotSensor right = RedBotSensor(A7);  
 
-// constants that are used in the code. LINETHRESHOLD is the level to detect 
+// constants that are used in the code. LINETHRESHOLD is the level to detect
 // if the sensor is on the line or not. If the sensor value is greater than this
 // the sensor is above a DARK line.
 //
@@ -48,8 +48,6 @@ void loop()
     while (left.read() < LIGHTLINE);
 
     //readjust to go straight
-
-
 
     // if all sensors are on black or up in the air, stop the motors.
     // otherwise, run motors given the control speeds above.
