@@ -1,3 +1,35 @@
+/* Matthew: Overall, everything looks great :)
+ * 
+ * There's one concept in C++ that we wouldn't have learned in 0711
+ * that's kinda important here. In C++, there are these "classes" that
+ * are basically just custom data types. You have your regular types like
+ * your ints, your floats, your doubles, and your booleans, but classes 
+ * are like combinations of these data types that you can create yourself 
+ * and tailor to your liking.
+ * 
+ * The only reason this is important is because C++ is an object-oriented language.
+ * In other words, the code is based entirely on variables that you declare with
+ * classes (this kind of variable is called an "object"). I'll give you an example: you might 
+ * declare an integer variable "int number = 20", where "number" is an instance of an int.
+ * An object is like that, where you might declare "RedBotSensor IRSensor = RedBotSensor(A3)".
+ * In this case, the object "IRSensor" is an instance of the RedBotSensor class.
+ * 
+ * So why does any of this matter? You might notice that when I went through your code,
+ * I took all the "drive" functions and threw the word "motors" in front of all of them. This
+ * is because every function that we're using in this code needs to be attached to some object.
+ * If you don't mention the object, or variable, that you want C++ to run a function on, it won't
+ * know which motor or sensor you want to operate. That's basically the takeaway -- when you call
+ * a function, like "drive()" or "read()" or "leftMotor()", you NEED to call it on an object for
+ * the function to make any sense to C++. If you take a look at the INSTANCE VARIABLES header, I
+ * put all the objects there that you need for the line following algorithm.
+ * 
+ * You might also wonder what that "RedBotSensor(A3)" part of the declaration means in
+ * "RedBotSensor IRSensor = RedBotSensor(A3)". That's formatting for another object-oriented concept
+ * called constructors, which I'm also happy to talk about :)
+ * 
+ * *reader gains +999999999 kg of brain matter*
+ * [note to self: DELETE ABOVE LINE]
+ */
 
 //  IMPORTS
 #include <RedBot.h>
