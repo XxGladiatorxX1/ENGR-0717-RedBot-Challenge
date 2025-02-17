@@ -31,6 +31,11 @@
  * [note to self: DELETE ABOVE LINE]
  */
 
+ /* ohhhhh i see i see thank yopu so much!! I don't have experience with this kind of coding.
+ * When I did robotics I didn't make it FTC or FRC so like it was just coding tih the premade lego language or 
+ * whatever it was so thank youuuu thank you :))
+ */
+
 //  IMPORTS
 #include <RedBot.h>
 
