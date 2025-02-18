@@ -33,13 +33,13 @@ int rightMotorSpeed;
 void setup();
 #line 39 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void loop();
-#line 49 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 48 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 int encodedOffset(int motorPower, int leftTicks, int rightTicks);
-#line 76 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 75 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void encodedDrive();
-#line 99 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 98 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void encodedTankTurn(int direction);
-#line 141 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 140 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void readSensorData();
 #line 30 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void setup()
@@ -57,8 +57,7 @@ void loop()
     readSensorData();
 
     //encodedDrive();
-    //encodedTankTurn(0);
-    motors.leftMotor(FAST_SPEED);
+    encodedTankTurn(0);
 }
 
 int encodedOffset(int motorPower, int leftTicks, int rightTicks)

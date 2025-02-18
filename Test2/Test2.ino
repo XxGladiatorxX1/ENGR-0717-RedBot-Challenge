@@ -42,8 +42,7 @@ void loop()
     readSensorData();
 
     //encodedDrive();
-    //encodedTankTurn(0);
-    motors.leftMotor(FAST_SPEED);
+    encodedTankTurn(0);
 }
 
 int encodedOffset(int motorPower, int leftTicks, int rightTicks)
