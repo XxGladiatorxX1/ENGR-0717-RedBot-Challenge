@@ -51,6 +51,16 @@ RedBotMotors motors;
 //  Variables to store motor speeds
 int leftMotorSpeed;
 int rightMotorSpeed;
+int motorPower;
+int currentMillis;
+int m;
+int xAccel = accelerometer.x;
+int yAccel = accelerometer.y;
+int zAccel = accelerometer.z;
+
+float XZ = accelerometer.angleXZ;  
+float YZ = accelerometer.angleYZ;  
+float XY = accelerometer.angleXY; 
 
 //  CONSTANTS
 //  The IR sensor values, measured 1/8" from the ground
@@ -74,6 +84,7 @@ void setup()
 {
     //  Initialize baudrate
     Serial.begin(115200);
+    
 
     //  Motor encoder calibration
     encoder.clearEnc(BOTH);
@@ -96,6 +107,32 @@ void loop()
         //GRAB ALIEN HERE!!!!!!!!!!!!
 
         //  program accelrometer here
+        accelerometer.read();
+
+    /*going to find angle values and buffers when 
+    *when there is the time to test
+    *using test values for now
+    */
+
+        if (XZ > 20) {
+
+            while (XZ > 15) { //chnage the angles?????
+                motorPower = map(XZ, 0, 90, 0, 255);
+                motors.drive(motorPower); //setting the motors to new scaling
+                accelerometer.read();       
+                XZ = accelerometer.angleXZ;
+            }
+        }
+        else {
+
+            motors.drive(motorPower);
+            m=millis();
+            currentMillis=millis();
+            while((currentMillis()-m) <2000) { //number variable
+                motors.leftBrake();
+                motors.rightBrake();
+            }
+        }
     }
     else if (((centerIRSensor.read() > BROWN_MIN && centerIRSensor.read() < BROWN_MAX) && 
         (rightIRSensor.read() > BROWN_MIN && rightIRSensor.read() < BROWN_MIN) && 
@@ -142,4 +179,10 @@ void readSensorData()
     Serial.print("\t");
     Serial.print(rightIRSensor.read());
     Serial.println();
+
+    // Provide accelerometer readings throughy serial motor
+    Serial.println("Accelerometer Readings:");
+    Serial.println();
+    Serial.println("(X, Y, Z) -- [X-Z, Y-Z, X-Y]");
+    Serial.println("============================");
 }
