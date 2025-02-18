@@ -54,24 +54,26 @@ int rightMotorSpeed;
 
 //  CONSTANTS
 //  The IR sensor values, measured 1/8" from the ground
-#define BLACK_MIN 900
+#define BLACK_MIN 990
 #define BLACK_MAX 1100
 #define RED_MIN 50
 #define RED_MAX 200
 #define BROWN_MIN 400
-#define BROWN_MAX 600
+#define BROWN_MAX 980
 
 
 //  Nominal speeds for the motors (max is 255)
-#define SLOW_SPEED 10
-#define FAST_SPEED 100
-#define REV_SLOW -10
-#define REV_FAST -100
+#define SLOW_SPEED 20
+#define MID_SPEED 125
+#define FAST_SPEED 255
+#define REV_MID -125
+#define REV_SLOW -20
+#define REV_FAST -255
 
 void setup()
 {
     //  Initialize baudrate
-    Serial.begin(9600);
+    Serial.begin(115200);
 
     //  Motor encoder calibration
     encoder.clearEnc(BOTH);
@@ -80,38 +82,64 @@ void setup()
 void loop()
 {
     //  Provides IR readings through serial monitor
+    readSensorData();
+    motors.leftMotor(MID_SPEED);
+    motors.rightMotor(MID_SPEED);
+
+    if (leftIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
+    {
+        //  pause
+        motors.leftBrake();
+        motors.rightBrake();
+        motors.leftMotor(MID_SPEED);
+        motors.rightMotor(MID_SPEED);
+        //GRAB ALIEN HERE!!!!!!!!!!!!
+
+        //  program accelrometer here
+    }
+    else if (((centerIRSensor.read() > BROWN_MIN && centerIRSensor.read() < BROWN_MAX) && 
+        (rightIRSensor.read() > BROWN_MIN && rightIRSensor.read() < BROWN_MIN) && 
+        (leftIRSensor.read() > BROWN_MIN && leftIRSensor.read())) ||
+        (centerIRSensor.read() > BLACK_MIN && 
+        (rightIRSensor.read() > BROWN_MIN && rightIRSensor.read() < BROWN_MIN) && 
+        (leftIRSensor.read() > BROWN_MIN && leftIRSensor.read())))
+    {
+        //  driving forward
+        motors.leftBrake();
+        motors.rightBrake();
+        motors.leftMotor(MID_SPEED);
+        motors.rightMotor(MID_SPEED);
+    }
+    else if (leftIRSensor.read() > BLACK_MIN && leftIRSensor.read() < BLACK_MAX)
+    {
+        //  turn left
+        motors.rightMotor(MID_SPEED);
+        motors.leftBrake();
+    }
+    else if (rightIRSensor.read() > BLACK_MIN && rightIRSensor.read() < BLACK_MAX)
+    {
+        //  turn right
+        motors.leftMotor(MID_SPEED);
+        motors.rightBrake();
+    }
+}
+
+void readSensorData()
+{
+    //  Provides encoder readings through serial monitor
+    Serial.println("Encoder Values:");
+    Serial.print(encoder.getTicks(RIGHT));
+    Serial.print("\t");
+    Serial.print(encoder.getTicks(LEFT));
+    Serial.print("\t");
+    Serial.println();
+
+    //  Provides IR readings through serial monitor
+    Serial.println("IR Sensor Values:");
     Serial.print(leftIRSensor.read());
     Serial.print("\t");
     Serial.print(centerIRSensor.read());
     Serial.print("\t");
     Serial.print(rightIRSensor.read());
-    delay(1000);
     Serial.println();
-
-    //  Matthew: one question, how come the value being compared to is 0?
-    if (centerIRSensor.read() >leftIRSensor.read() && centerIRSensor.read() > rightIRSensor.read())
-    {
-        //  driving forward
-        motors.drive(FAST_SPEED);
-    }
-    else if (leftIRSensor.read() > rightIRSensor.read() && leftIRSensor.read() > centerIRSensor.read())
-    {
-        //  turn left
-        motors.rightMotor(SLOW_SPEED);
-        motors.leftMotor(REV_SLOW);
-    }
-    else if (rightIRSensor.read() > leftIRSensor.read() && rightIRSensor.read() > centerIRSensor.read())
-    {
-        //  turn right
-        motors.leftMotor(SLOW_SPEED);
-        motors.rightMotor(REV_SLOW);
-    }
-    else if (leftIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
-    {
-        //  pause
-        motors.drive(FAST_SPEED, 1000);
-        //GRAB ALIEN HERE!!!!!!!!!!!!
-
-        //  program accelrometer here
-    }
 }

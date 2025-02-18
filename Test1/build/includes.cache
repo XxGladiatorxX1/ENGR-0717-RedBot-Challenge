@@ -1,0 +1,67 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard"
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test1\\build\\sketch\\Test1.ino.cpp",
+    "Include": "RedBot.h",
+    "Includepath": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test1\\build\\sketch\\Test1.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBot.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotAccel.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotBumper.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotButton.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotEncoder.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotMotors.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotRadio.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotSensor.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotSoftwareSerial.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
