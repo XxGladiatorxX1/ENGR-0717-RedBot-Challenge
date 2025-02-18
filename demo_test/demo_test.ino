@@ -51,18 +51,18 @@ void loop()
     Serial.println();
 
     //  Matthew: one question, how come the value being compared to is 0?
-    if (leftIRSensor.read() == 0 && rightIRSensor.read() == 0 && centerIRSensor.read() == 0)
+    if (centerIRSensor.read() >leftIRSensor.read() && centerIRSensor.read() > rightIRSensor.read())
     {
         //  driving forward
         motors.drive(FAST_SPEED);
     }
-    else if (leftIRSensor.read() > BLACK_MIN && rightIRSensor.read() < BLACK_MIN)
+    else if (leftIRSensor.read() > rightIRSensor.read() && leftIRSensor.read() > centerIRSensor.read())
     {
         //  turn left
         motors.rightMotor(SLOW_SPEED);
         motors.leftMotor(REV_SLOW);
     }
-    else if (leftIRSensor.read() < BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
+    else if (rightIRSensor.read() > leftIRSensor.read() && rightIRSensor.read() > centerIRSensor.read())
     {
         //  turn right
         motors.leftMotor(SLOW_SPEED);
@@ -71,26 +71,10 @@ void loop()
     else if (leftIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
     {
         //  pause
-        motors.brake();
-        //  turn at the mound
-        // Matthew: another question, is "i" supposed to be the time duration of the turn?
-        for (int i = 0; i < 20000; i++)
-        {
-            motors.leftMotor(SLOW_SPEED);
-            motors.rightMotor(REV_SLOW);
-        }  
-
-        //GRAB ALIEN HERE!!!!!!!!!!!!
-        
-        //  drive forward slightly
         motors.drive(FAST_SPEED, 1000);
-        //  turn right even more (repeat earlier)
-        for (int i = 0; i < 20000; i++) {
-            motors.leftMotor(SLOW_SPEED);
-            motors.rightMotor(REV_SLOW);
-        } 
-        //  drive to the end
-        motors.drive(FAST_SPEED, 10000);
+        //GRAB ALIEN HERE!!!!!!!!!!!!
+
+        //  program accelrometer here
     }
 }
 
