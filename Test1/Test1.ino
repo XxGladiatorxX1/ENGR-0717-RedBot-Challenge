@@ -180,7 +180,7 @@ void readSensorData()
     Serial.print(rightIRSensor.read());
     Serial.println();
 
-    // Provide accelerometer readings
+    // Provide accelerometer readings throughy serial motor
     Serial.println("Accelerometer Readings:");
     Serial.println();
     Serial.println("(X, Y, Z) -- [X-Z, Y-Z, X-Y]");
