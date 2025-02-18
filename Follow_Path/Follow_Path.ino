@@ -148,7 +148,7 @@ void encodedTankTurn(int motorPower, int direction)
     if (direction == 0)
         leftPower *= -1;
     else if (direction == 1)
-        rightPower *= 1;
+        rightPower *= -1;
 
     //  variable used to offset motor power on right vs left to keep straight.
     int offset = 5;  // offset amount to compensate Right vs. Left drive
