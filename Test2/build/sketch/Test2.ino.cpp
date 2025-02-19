@@ -8,6 +8,10 @@
  * are used to instantiate no particular sensor
  */
 RedBotEncoder encoder = RedBotEncoder(A2, 10);
+RedBotSensor leftIRSensor = RedBotSensor(A3);
+RedBotSensor centerIRSensor = RedBotSensor(A6);
+RedBotSensor rightIRSensor = RedBotSensor(A7);
+RedBotAccel accelerometer;
 RedBotMotors motors;
 
 //  Variables to store motor speeds
@@ -29,19 +33,19 @@ int rightMotorSpeed;
 #define MID_SPEED 125
 #define FAST_SPEED 245
 
-#line 30 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 34 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void setup();
-#line 39 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 43 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void loop();
-#line 48 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
-int encodedOffset(int motorPower, int leftTicks, int rightTicks);
-#line 75 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 53 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void encodedDrive();
-#line 98 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 76 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void encodedTankTurn(int direction);
-#line 140 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 118 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+void driveYaw();
+#line 158 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void readSensorData();
-#line 30 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
+#line 34 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test2\\Test2.ino"
 void setup()
 {
     //  Initialize baudrate
@@ -56,35 +60,9 @@ void loop()
     //  Provides IR readings through serial monitor
     readSensorData();
 
-    //encodedDrive();
-    encodedTankTurn(0);
-}
-
-int encodedOffset(int motorPower, int leftTicks, int rightTicks)
-{
-        //  variables for tracking the left and right encoder counts
-        long prevLeftEncCount, prevRightEncCount;
-        long leftDiff, rightDiff;  // difference between current encoder count and previous count
-    
-        //  variables for setting left and right motor power
-        int leftPower = motorPower;
-        int rightPower = motorPower;
-    
-        //  variable used to offset motor power on right vs left to keep straight.
-        int offset = 5;  // offset amount to compensate Right vs. Left drive
-
-        if (leftDiff > rightDiff) 
-        {
-            leftPower -= offset;
-            rightPower += offset;
-        }
-        //  if right is faster than the left, speed up the left / slow down right
-        else if (leftDiff < rightDiff) 
-        {
-            leftPower += offset;  
-            rightPower -= offset;
-        }
-        delay(50);
+    encodedDrive();
+    //encodedTankTurn(0);
+    //driveYaw();
 }
 
 void encodedDrive()
@@ -152,6 +130,46 @@ void encodedTankTurn(int direction)
     }
 }
 
+void driveYaw()
+{
+    accelerometer.read();
+
+    // read in where redbot is in space (oooooooooooo)
+    int xAccel = accelerometer.x;
+    int yAccel = accelerometer.y;
+    int zAccel = accelerometer.z;
+    int motorPower, m, currentMillis;
+
+    float XZ = accelerometer.angleXZ;  
+    float YZ = accelerometer.angleYZ;  
+    float XY = accelerometer.angleXY; 
+
+    /* going to find angle values and buffers when 
+    *  when there is the time to test
+    *  using test values for now
+    */
+
+    if (XZ > 20)
+    {
+        while (XZ > 15) // chnage the angles?????
+        {
+            motorPower = map(XZ, 0, 90, 0, 255);
+            motors.drive(motorPower); // setting the motors to new scaling
+            accelerometer.read();       
+            XZ = accelerometer.angleXZ;
+        }
+    }
+    else
+    {
+        motors.drive(motorPower);
+        while((currentMillis - m) < 2000) // number variable
+        {
+            motors.leftBrake();
+            motors.rightBrake();
+        }
+    }
+}
+
 void readSensorData()
 {
     //  Provides encoder readings through serial monitor
@@ -161,5 +179,28 @@ void readSensorData()
     Serial.print(encoder.getTicks(LEFT));
     Serial.print("\t");
     Serial.println();
+
+    /*
+    //  Provides IR readings through serial monitor
+    Serial.println("IR Sensor Values:");
+    Serial.print(leftIRSensor.read());
+    Serial.print("\t");
+    Serial.print(centerIRSensor.read());
+    Serial.print("\t");
+    Serial.print(rightIRSensor.read());
+    Serial.println();
+    */
+
+    /*
+    // Provides accelerometer readings through serial monitor
+    accelerometer.read();
+    Serial.println("Accelerometer Values:");
+    Serial.print(accelerometer.angleXZ);
+    Serial.print("\t");
+    Serial.print(accelerometer.angleXY);
+    Serial.print("\t");
+    Serial.print(accelerometer.angleYZ);
+    Serial.println();
+    */
 }
 
