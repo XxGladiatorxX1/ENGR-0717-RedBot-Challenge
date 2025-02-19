@@ -132,6 +132,10 @@ void loop()
                 motors.leftBrake();
                 motors.rightBrake();
             }
+
+            motorPower= HIGH_SPEED;
+            
+
         }
     }
     else if (((centerIRSensor.read() > BROWN_MIN && centerIRSensor.read() < BROWN_MAX) && 
