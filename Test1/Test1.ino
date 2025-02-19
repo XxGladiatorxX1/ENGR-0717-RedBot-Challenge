@@ -134,7 +134,20 @@ void loop()
             }
 
             motorPower= HIGH_SPEED;
-            
+
+            //move forward slightly
+            motors.leftMotor(MID_SPEED, 1000);
+            motors.rightMotor(MID_SPEED, 1000);
+
+            //turn slightly right
+            motors.leftMotor(MID_SPEED, 500);
+            motors.rightMotor(REV_MID, 500);
+
+            //up the wall
+            while(centerIRSensore.read() != RED_MIN || leftIRSensor.read() != RED_MIN || rightIRSensor.read() != RED_MIN) {
+                motors.leftMotor(MID_SPEED);
+                motors.rightMotor(MID_SPEED);
+            }
 
         }
     }
