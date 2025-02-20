@@ -86,130 +86,6 @@
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
-   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBot.cpp",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBot.cpp.o"
-  ],
-  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBot.cpp"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
-   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotBumper.cpp",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotBumper.cpp.o"
-  ],
-  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotBumper.cpp"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
-   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotAccel.cpp",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotAccel.cpp.o"
-  ],
-  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotAccel.cpp"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
-   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotMotors.cpp",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotMotors.cpp.o"
-  ],
-  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotMotors.cpp"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
    "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotSensor.cpp",
    "-o",
    "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotSensor.cpp.o"
@@ -241,11 +117,11 @@
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
-   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotSoftwareSerial.cpp",
+   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotButton.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotSoftwareSerial.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotButton.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotSoftwareSerial.cpp"
+  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotButton.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -303,11 +179,11 @@
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
-   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotButton.cpp",
+   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotAccel.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotButton.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotAccel.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotButton.cpp"
+  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotAccel.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -333,11 +209,12 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\USBCore.cpp",
+   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
+   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotSoftwareSerial.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\USBCore.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotSoftwareSerial.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\USBCore.cpp"
+  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotSoftwareSerial.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -363,11 +240,74 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp",
+   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
+   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotBumper.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotBumper.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp"
+  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotBumper.cpp"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
+   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBot.cpp",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBot.cpp.o"
+  ],
+  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBot.cpp"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "-IC:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src",
+   "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotMotors.cpp",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\libraries\\SparkFun_RedBot_Library\\RedBotMotors.cpp.o"
+  ],
+  "file": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries\\SparkFun_RedBot_Library\\src\\RedBotMotors.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -423,6 +363,66 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\Stream.cpp.o"
+  ],
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial.cpp.o"
+  ],
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial.cpp"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Print.cpp",
    "-o",
    "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\Print.cpp.o"
@@ -453,11 +453,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\IPAddress.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\abi.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp"
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -510,29 +510,26 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial1.cpp",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\USBCore.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial1.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\USBCore.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial1.cpp"
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\USBCore.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
   "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
    "-c",
    "-g",
    "-Os",
    "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
+   "-std=gnu11",
    "-ffunction-sections",
    "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
    "-MMD",
    "-flto",
+   "-fno-fat-lto-objects",
    "-mmcu=atmega328p",
    "-DF_CPU=16000000L",
    "-DARDUINO=10607",
@@ -540,11 +537,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\hooks.c",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\Stream.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\hooks.c.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\Stream.cpp"
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\hooks.c"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -575,36 +572,6 @@
    "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\WMath.cpp.o"
   ],
   "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\WMath.cpp"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial2.cpp.o"
-  ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -690,36 +657,6 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial3.cpp.o"
-  ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu++11",
-   "-fpermissive",
-   "-fno-exceptions",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-fno-threadsafe-statics",
-   "-Wno-error=narrowing",
-   "-MMD",
-   "-flto",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\PluggableUSB.cpp",
    "-o",
    "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\PluggableUSB.cpp.o"
@@ -750,11 +687,71 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\abi.cpp.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\IPAddress.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\abi.cpp"
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\IPAddress.cpp"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial1.cpp",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial1.cpp.o"
+  ],
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial1.cpp"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
+   "-MMD",
+   "-flto",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial2.cpp.o"
+  ],
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial2.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -789,17 +786,20 @@
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
   "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-g++",
    "-c",
    "-g",
    "-Os",
    "-w",
-   "-std=gnu11",
+   "-std=gnu++11",
+   "-fpermissive",
+   "-fno-exceptions",
    "-ffunction-sections",
    "-fdata-sections",
+   "-fno-threadsafe-statics",
+   "-Wno-error=narrowing",
    "-MMD",
    "-flto",
-   "-fno-fat-lto-objects",
    "-mmcu=atmega328p",
    "-DF_CPU=16000000L",
    "-DARDUINO=10607",
@@ -807,11 +807,11 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\hooks.c",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\hooks.c.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\HardwareSerial3.cpp.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\hooks.c"
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\HardwareSerial3.cpp"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -842,83 +842,6 @@
    "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\new.cpp.o"
   ],
   "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\new.cpp"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
-   "-c",
-   "-g",
-   "-x",
-   "assembler-with-cpp",
-   "-flto",
-   "-MMD",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring_pulse.S.o"
-  ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu11",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-MMD",
-   "-flto",
-   "-fno-fat-lto-objects",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring.c.o"
-  ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c"
- },
- {
-  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
-  "arguments": [
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
-   "-c",
-   "-g",
-   "-Os",
-   "-w",
-   "-std=gnu11",
-   "-ffunction-sections",
-   "-fdata-sections",
-   "-MMD",
-   "-flto",
-   "-fno-fat-lto-objects",
-   "-mmcu=atmega328p",
-   "-DF_CPU=16000000L",
-   "-DARDUINO=10607",
-   "-DARDUINO_AVR_UNO",
-   "-DARDUINO_ARCH_AVR",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
-   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_analog.c",
-   "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring_analog.c.o"
-  ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_analog.c"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -971,11 +894,34 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c",
    "-o",
-   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring_shift.c.o"
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring.c.o"
   ],
-  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c"
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring.c"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "-c",
+   "-g",
+   "-x",
+   "assembler-with-cpp",
+   "-flto",
+   "-MMD",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring_pulse.S.o"
+  ],
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_pulse.S"
  },
  {
   "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
@@ -1025,10 +971,64 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_analog.c",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring_analog.c.o"
+  ],
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_analog.c"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu11",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-MMD",
+   "-flto",
+   "-fno-fat-lto-objects",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
    "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c",
    "-o",
    "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring_digital.c.o"
   ],
   "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_digital.c"
+ },
+ {
+  "directory": "C:\\Users\\mdjor\\AppData\\Local\\Programs\\Microsoft VS Code",
+  "arguments": [
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7/bin/avr-gcc",
+   "-c",
+   "-g",
+   "-Os",
+   "-w",
+   "-std=gnu11",
+   "-ffunction-sections",
+   "-fdata-sections",
+   "-MMD",
+   "-flto",
+   "-fno-fat-lto-objects",
+   "-mmcu=atmega328p",
+   "-DF_CPU=16000000L",
+   "-DARDUINO=10607",
+   "-DARDUINO_AVR_UNO",
+   "-DARDUINO_ARCH_AVR",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
+   "-IC:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
+   "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c",
+   "-o",
+   "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\build\\core\\wiring_shift.c.o"
+  ],
+  "file": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino\\wiring_shift.c"
  }
 ]

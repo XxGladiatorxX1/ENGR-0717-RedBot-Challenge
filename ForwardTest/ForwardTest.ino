@@ -87,7 +87,7 @@ void loop()
     delay(1000);
 
     encodedTankTurn(0);
-    delay(325);
+    delay(275);
     motors.leftBrake();
     motors.rightBrake();
     delay(1000);

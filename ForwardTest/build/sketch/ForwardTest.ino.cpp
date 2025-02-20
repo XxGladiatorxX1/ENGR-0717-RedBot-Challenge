@@ -40,15 +40,15 @@ int XZ;
 void setup();
 #line 52 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
 void loop();
-#line 146 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
+#line 106 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
 void encodedDrive();
-#line 175 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
+#line 135 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
 void encodedTankTurn(int direction);
-#line 224 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
+#line 184 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
 void driveRamp();
-#line 231 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
+#line 191 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
 void driveMound();
-#line 241 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
+#line 201 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
 void readSensorData();
 #line 37 "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\ForwardTest\\ForwardTest.ino"
 void setup()
@@ -104,7 +104,7 @@ void loop()
     delay(1000);
 
     encodedTankTurn(0);
-    delay(325);
+    delay(275);
     motors.leftBrake();
     motors.rightBrake();
     delay(1000);
@@ -118,46 +118,6 @@ void loop()
         XZ = accelerometer.angleXZ;
     }
     delay(100000000000000000);
-////////////////////////////////////////////////////////////////////
-
-
-
-    //motors.leftMotor(-255);
-    //motors.rightMotor(255);
-
-    
-    //while (leftIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
-    //{
-        //encodedDrive();
-    //}
-    /*encodedDrive();
-    if (leftIRSensor.read() > BLACK_MIN && leftIRSensor.read() < BLACK_MAX)
-    {
-        encodedTankTurn(0);
-    }
-    else if (rightIRSensor.read() > BLACK_MIN && rightIRSensor.read() < BLACK_MAX)
-    {
-       encodedTankTurn(1);
-    }
-    else if (rightIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && leftIRSensor.read() > BLACK_MIN) 
-    {
-        motors.leftBrake();
-        motors.rightBrake();
-        encodedTankTurn(1);
-    }
-    while (accelerometer.angleXZ > 10 && accelerometer.angleXZ < 15) 
-    {
-        while (accelerometer.angleXY < 50) {
-            motors.leftBrake();
-            motors.rightBrake();
-            encodedTankTurn(1);
-        }
-        encodedDrive();
-        while (accelerometer.angleXY < 90)
-        {
-            encodedTankTurn(1);
-        }
-    }*/
 }
 
 void encodedDrive()
