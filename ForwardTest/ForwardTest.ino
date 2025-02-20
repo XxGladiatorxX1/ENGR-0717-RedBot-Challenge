@@ -101,46 +101,6 @@ void loop()
         XZ = accelerometer.angleXZ;
     }
     delay(100000000000000000);
-////////////////////////////////////////////////////////////////////
-
-
-
-    //motors.leftMotor(-255);
-    //motors.rightMotor(255);
-
-    
-    //while (leftIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && rightIRSensor.read() > BLACK_MIN)
-    //{
-        //encodedDrive();
-    //}
-    /*encodedDrive();
-    if (leftIRSensor.read() > BLACK_MIN && leftIRSensor.read() < BLACK_MAX)
-    {
-        encodedTankTurn(0);
-    }
-    else if (rightIRSensor.read() > BLACK_MIN && rightIRSensor.read() < BLACK_MAX)
-    {
-       encodedTankTurn(1);
-    }
-    else if (rightIRSensor.read() > BLACK_MIN && centerIRSensor.read() > BLACK_MIN && leftIRSensor.read() > BLACK_MIN) 
-    {
-        motors.leftBrake();
-        motors.rightBrake();
-        encodedTankTurn(1);
-    }
-    while (accelerometer.angleXZ > 10 && accelerometer.angleXZ < 15) 
-    {
-        while (accelerometer.angleXY < 50) {
-            motors.leftBrake();
-            motors.rightBrake();
-            encodedTankTurn(1);
-        }
-        encodedDrive();
-        while (accelerometer.angleXY < 90)
-        {
-            encodedTankTurn(1);
-        }
-    }*/
 }
 
 void encodedDrive()
