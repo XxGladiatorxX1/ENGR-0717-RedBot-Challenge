@@ -2,15 +2,15 @@
 #include <RedBot.h>
 
 // add setup motor stuff
-RedBotAccel accelerometer = RedBotAccel();
-RedBotMotors motors = RedBotMotors();
+RedBotAccel accelerometer;
+RedBotMotors motors;
 int motorPower;
 int currentMillis;
 int m;
 
-void setup(void) {
-
-    Serial.begin(9600);
+void setup(void)
+{
+    Serial.begin(115200);
     Serial.println("Accelerometer Readings:");
     Serial.println();
     Serial.println("(X, Y, Z) -- [X-Z, Y-Z, X-Y]");

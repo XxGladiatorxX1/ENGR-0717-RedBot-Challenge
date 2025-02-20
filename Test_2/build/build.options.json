@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "..\\..\\..,..\\..\\..",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "build.warn_data_percentage=75",
+  "fqbn": "arduino:avr:uno",
+  "hardwareFolders": "C:\\Users\\mdjor\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\mdjor\\Documents\\Arduino\\libraries",
+  "sketchLocation": "C:\\Users\\mdjor\\ENGR-0717-RedBot-Challenge\\Test_2"
+}

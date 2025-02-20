@@ -46,6 +46,7 @@ RedBotSensor leftIRSensor = RedBotSensor(A3);
 RedBotSensor centerIRSensor = RedBotSensor(A6);
 RedBotSensor rightIRSensor = RedBotSensor(A7);
 RedBotEncoder encoder = RedBotEncoder(A2, 10);
+RedBotAccel accelerometer;
 RedBotMotors motors;
 
 //  Variables to store motor speeds
@@ -128,12 +129,12 @@ void loop()
             motors.drive(motorPower);
             m=millis();
             currentMillis=millis();
-            while((currentMillis()-m) <2000) { //number variable
+            while((currentMillis-m) <2000) { //number variable
                 motors.leftBrake();
                 motors.rightBrake();
             }
 
-            motorPower= HIGH_SPEED;
+            motorPower= FAST_SPEED;
 
             //move forward slightly
             motors.leftMotor(MID_SPEED, 1000);
@@ -144,7 +145,7 @@ void loop()
             motors.rightMotor(REV_MID, 500);
 
             //up the wall
-            while(centerIRSensore.read() != RED_MIN || leftIRSensor.read() != RED_MIN || rightIRSensor.read() != RED_MIN) {
+            while(centerIRSensor.read() != RED_MIN || leftIRSensor.read() != RED_MIN || rightIRSensor.read() != RED_MIN) {
                 motors.leftMotor(MID_SPEED);
                 motors.rightMotor(MID_SPEED);
             }
